@@ -20,9 +20,10 @@ public:
  }
   Vector& operator=(const Vector& v){
     if(this == &v)
-     vec = new double[v._size];
-     for (int i = 0; i < v._size; i++){
-         vec[i] = v.vec[i];
+        delete[] vec; 
+        vec = new double[v._size];
+        for (int i = 0; i < v._size; i++){
+        vec[i] = v.vec[i];
      }
     return *this;
  }
