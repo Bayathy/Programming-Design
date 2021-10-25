@@ -12,19 +12,28 @@ public:
 
 }
  Vector(const Vector& v){
+    _size = v._size;
+    vec = new double[_size];
+    for (int i = 0; i < v._size; i++){
+        vec[i] = v.vec[i];
+    }
+ }
+  Vector& operator=(const Vector& v){
+    if(this == &v)
      vec = new double[v._size];
      for (int i = 0; i < v._size; i++){
          vec[i] = v.vec[i];
      }
+    return *this;
  }
  ~Vector(){ 
-     delete[] vec;
+    delete[] vec;
  }
  size_t size() {
     return _size;
 }
  double& operator[](size_t i){
-     return vec[i];
+    return vec[i];
  }
 };
 
