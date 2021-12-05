@@ -3,23 +3,24 @@ using namespace std;
 int main()
 {
     int month, day;
-    cout << "ä»Šæœˆã¯ä½•æœˆ? ";
+    cout << "¡Œ‚Í‰½Œ?";
     cin >> month;
-    cout << "ä»Šæ—¥ã¯ä½•æ—¥? ";
+    cout << "¡“ú‚Í‰½“ú?";
     cin >> day;
 
     try
     {    
       if (month < 1 || month > 12) {
-        throw "æœˆã®å…¥åŠ›å€¤ãŒãŠã‹ã—ã„ã€‚";
+        throw "Œ‚Ì“ü—Í’l‚ª‚¨‚©‚µ‚¢B";
 
       }
       if (day < 1 || day > 31) {
-        throw "æ—¥ã®å…¥åŠ›å€¤ãŒãŠã‹ã—ã„ã€‚";
+        throw "“ú‚Ì“ü—Í’l‚ª‚¨‚©‚µ‚¢B";
+    }
     }
     catch(const char* err) {
       cout << err << endl;
       return -1;
     }
-    cout << "ä»Šæ—¥ã¯" << month << "æœˆ" << day << "æ—¥ã§ã™ã€‚" << endl;
+    cout << "¡“ú‚Í" << month << "Œ" << day << "“ú‚Å‚·B" << endl;
 }
