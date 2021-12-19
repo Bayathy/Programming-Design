@@ -5,7 +5,7 @@ namespace japanese {
   void question() {cout << "‚ ‚È‚½‚Í“ú–{Œê‚ªD‚«‚Å‚·‚©?" << endl;}
   int score;
   }
- namespace english {
+namespace english {
   void question() {cout << "Do you like English?" << endl;}
   int score;
   }

@@ -2,6 +2,9 @@
   "C_Cpp.errorSquiggles": "Disabled",
   "files.associations": {
     "exception": "cpp",
-    "memory": "cpp"
+    "memory": "cpp",
+    "fstream": "cpp",
+    "iosfwd": "cpp",
+    "iostream": "cpp"
   }
 }
