@@ -43,9 +43,7 @@ int main()
       cout << err << endl;
       return -1;
     }
-    
-    date.setMonth(month);
-    date.setDay(day);
+
     cout << "今日は" << date.format() << "です。" << endl;
     return 0;
 }

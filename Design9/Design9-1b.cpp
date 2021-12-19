@@ -24,3 +24,4 @@ int main()
 
     cout << "今日は" << month << "月" << day << "日です。" << endl;
 }
+
