@@ -16,8 +16,6 @@ class Point {
     }
 };
 
-
-
 int main(){
   Point p;
   cout << "入力: ";

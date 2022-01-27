@@ -15,7 +15,5 @@ int main(){
     outfile << text << endl;
   }
   
-  
-
   return 0;
 }
