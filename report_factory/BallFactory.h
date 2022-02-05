@@ -3,5 +3,6 @@
 
 class BallFactory
 {
-  static Ball *create(Ball::TYPE type);
-}
+  public:
+  static Ball* create(Ball::TYPE type);
+};

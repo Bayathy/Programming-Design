@@ -14,4 +14,5 @@ Ball *BallFactory::create(Ball::TYPE type)
   case Ball::TYPE::BasketBall:
     return new BasketBall;
   }
+  return nullptr;
 }

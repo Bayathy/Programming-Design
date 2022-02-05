@@ -25,7 +25,7 @@ void BallApp::init()
     else if (r < 4)
       b = BallFactory::create(Ball::TYPE::TennisBall);
     else
-      b = BallFactory::create(Ball::TYPE::BaseBall;
+      b = BallFactory::create(Ball::TYPE::BaseBall);
 
     b->init();
   }
